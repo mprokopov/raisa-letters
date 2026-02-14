@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<ul class="letter-list">
+{{ range .Pages.ByParam "weight" }}
+  <li>
+    <span class="date">{{ with .Params.date_written }}{{ . }}{{ end }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ with .Params.summary }} — <em>{{ . }}</em>{{ end }}
+  </li>
+{{ end }}
+</ul>
+{{ end }}

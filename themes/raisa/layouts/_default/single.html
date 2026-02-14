@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.date_written }}<div class="entry-date">{{ . }}</div>{{ end }}
+  {{ with .Params.summary }}<div class="entry-meta">{{ . }}</div>{{ end }}
+  {{ .Content }}
+</article>
+{{ end }}

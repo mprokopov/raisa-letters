@@ -1,0 +1,60 @@
+{{ define "main" }}
+<h1>Raisa's Journey</h1>
+<p>Kyiv → Kraków → Ansbach → Würzburg → Schönaich → Hannover</p>
+
+<div id="map"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  var map = L.map('map').setView([50.0, 11.0], 5);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    maxZoom: 18
+  }).addTo(map);
+
+  var locations = [
+    { name: "Kyiv", lat: 50.4501, lng: 30.5234, desc: "Home. Departed April 14, 1942." },
+    { name: "Kraków", lat: 50.0647, lng: 19.9450, desc: "Transit stop. 1.5 days. Fed + bathhouse." },
+    { name: "Ansbach", lat: 49.3009, lng: 10.5718, desc: "Transit camp. 21 nights in horse stable." },
+    { name: "Würzburg", lat: 49.7913, lng: 9.9534, desc: "Registration and processing center." },
+    { name: "Schönaich / Altenschönbach", lat: 49.7175, lng: 10.3547, desc: "Farm. May 1942 – Aug 1943. Walter's farm." },
+    { name: "Hannover", lat: 52.3759, lng: 9.7320, desc: "Factory. From Sept 1943. Podbielskistraße 100." }
+  ];
+
+  var points = [];
+  locations.forEach(function(loc) {
+    var marker = L.marker([loc.lat, loc.lng]).addTo(map);
+    marker.bindPopup("<strong>" + loc.name + "</strong><br>" + loc.desc);
+    points.push([loc.lat, loc.lng]);
+  });
+
+  // Draw route line
+  L.polyline(points, {
+    color: '#8b4513',
+    weight: 2,
+    opacity: 0.7,
+    dashArray: '8, 8'
+  }).addTo(map);
+
+  map.fitBounds(points, { padding: [30, 30] });
+</script>
+
+<h2 style="margin-top: 2rem;">Locations</h2>
+
+<h3>Schönaich / Altenschönbach</h3>
+<p>A small village in Franconia (Unterfranken), Bavaria. 46 km south of Würzburg, near Gerolzhofen and Wiesentheid. Raisa's postal address: <em>Post Altenschönbach, Mainfranken, über Wiesentheid</em>.</p>
+<p>She described it as a village in forest, with one road, mud everywhere. The farmer Walter kept 17 cows, horses (Pani and Ladi), chickens, geese, and rabbits.</p>
+
+<h3>Hannover — Podbielskistraße 100</h3>
+<p>From September 1943, Raisa was transferred to factory work in Hannover. Shift-based industrial labor. She befriended Vera and Mira there.</p>
+
+<h3>Kyiv Addresses</h3>
+<ul>
+  <li><strong>Совська (Sowskaja) 56 / Юрівська 56</strong> — primary family address</li>
+  <li><strong>Ярославська 5б, Sector VII</strong> — later address</li>
+  <li><strong>Голосеєвська 15</strong> — friend Nata Lepkova</li>
+  <li><strong>Совська 58</strong> — friend Mascha Kodii</li>
+</ul>
+
+{{ end }}
