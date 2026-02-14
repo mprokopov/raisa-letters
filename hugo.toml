@@ -1,47 +1,80 @@
 baseURL = 'https://raisa.prokopov.me/'
-languageCode = 'en'
-title = 'Raisa Pogorelova — Letters from Germany, 1942–1944'
+title = 'Raisa Pogorelova'
 theme = 'raisa'
-
-[params]
-  description = "Letters and diary of Raisa Pogorelova, a Ukrainian Ostarbeiter in Nazi Germany (1942–1944). A family archive preserving one young woman's voice from forced labor."
-  author = "Maksym Prokopov"
-  subtitle = "Листи з Німеччини · Letters from Germany · 1942–1944"
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [taxonomies]
   person = "people"
-  location = "locations"
   tag = "tags"
+
+[languages]
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    weight = 1
+    title = 'Raisa Pogorelova — Letters from Germany, 1942–1944'
+    [languages.en.params]
+      description = "Letters and diary of Raisa Pogorelova, a Ukrainian Ostarbeiter in Nazi Germany (1942–1944)."
+      subtitle = "Letters from Germany · 1942–1944"
+
+  [languages.ru]
+    languageCode = 'ru'
+    languageName = 'Русский'
+    weight = 2
+    title = 'Раиса Погорелова — Письма из Германии, 1942–1944'
+    [languages.ru.params]
+      description = "Письма и дневник Раисы Погореловой, украинской остарбайтерши в нацистской Германии (1942–1944)."
+      subtitle = "Письма из Германии · 1942–1944"
+
+  [languages.de]
+    languageCode = 'de'
+    languageName = 'Deutsch'
+    weight = 3
+    title = 'Raisa Pogorelova — Briefe aus Deutschland, 1942–1944'
+    [languages.de.params]
+      description = "Briefe und Tagebuch von Raisa Pogorelova, einer ukrainischen Zwangsarbeiterin im nationalsozialistischen Deutschland (1942–1944)."
+      subtitle = "Briefe aus Deutschland · 1942–1944"
+
+[params]
+  author = "Maksym Prokopov"
 
 [menu]
   [[menu.main]]
+    identifier = "home"
     name = "Home"
     url = "/"
     weight = 1
   [[menu.main]]
+    identifier = "letters"
     name = "Letters"
     url = "/letters/"
     weight = 2
   [[menu.main]]
+    identifier = "diary"
     name = "Diary"
     url = "/diary/"
     weight = 3
   [[menu.main]]
+    identifier = "timeline"
     name = "Timeline"
     url = "/timeline/"
     weight = 4
   [[menu.main]]
+    identifier = "people"
     name = "People"
     url = "/people/"
     weight = 5
   [[menu.main]]
+    identifier = "map"
     name = "Map"
     url = "/map/"
     weight = 6
   [[menu.main]]
+    identifier = "about"
     name = "About"
     url = "/about/"
     weight = 7

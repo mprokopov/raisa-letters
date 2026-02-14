@@ -1,96 +1,79 @@
 {{ define "main" }}
-<h1>Timeline</h1>
-<p>A chronological overview of Raisa's journey and key events, as pieced together from her letters and diary.</p>
+{{ $lang := .Site.Language.Lang }}
+
+{{ if eq $lang "ru" }}<h1>Хронология</h1><p>Хронологический обзор пути Раисы и ключевых событий, восстановленных по письмам и дневнику.</p>
+{{ else if eq $lang "de" }}<h1>Zeitstrahl</h1><p>Ein chronologischer Überblick über Raisas Weg und wichtige Ereignisse, rekonstruiert aus ihren Briefen und dem Tagebuch.</p>
+{{ else }}<h1>Timeline</h1><p>A chronological overview of Raisa's journey and key events, pieced together from her letters and diary.</p>{{ end }}
 
 <div class="timeline">
 
   <div class="timeline-item">
-    <div class="timeline-date">April 14, 1942</div>
-    <div class="timeline-text"><strong>Departs Kyiv.</strong> "В мгновенье когда тронулся поезд мое сердце остановилось." She is 18 years old.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}14 апреля 1942{{ else if eq $lang "de" }}14. April 1942{{ else }}April 14, 1942{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Отъезд из Киева.{{ else if eq $lang "de" }}Abfahrt aus Kyjiw.{{ else }}Departs Kyiv.{{ end }}</strong> «В мгновенье когда тронулся поезд мое сердце остановилось.» {{ if eq $lang "ru" }}Ей 18 лет.{{ else if eq $lang "de" }}Sie ist 18 Jahre alt.{{ else }}She is 18 years old.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">~April 22, 1942</div>
-    <div class="timeline-text"><strong>Arrives in Kraków.</strong> 1.5-day stop. Fed and given access to a bathhouse.</div>
+    <div class="timeline-date">~{{ if eq $lang "ru" }}22 апреля{{ else if eq $lang "de" }}22. April{{ else }}April 22{{ end }}, 1942</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Прибытие в Краков.{{ else if eq $lang "de" }}Ankunft in Krakau.{{ else }}Arrives in Kraków.{{ end }}</strong> {{ if eq $lang "ru" }}Остановка на 1,5 дня. Кормят, баня.{{ else if eq $lang "de" }}1,5-tägiger Aufenthalt. Verpflegung und Bad.{{ else }}1.5-day stop. Fed and given access to a bathhouse.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">~April 24, 1942</div>
-    <div class="timeline-text"><strong>Arrives in Ansbach.</strong> Placed in a city horse stable. Promised one night.</div>
+    <div class="timeline-date">~{{ if eq $lang "ru" }}24 апреля{{ else if eq $lang "de" }}24. April{{ else }}April 24{{ end }}, 1942</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Прибытие в Ансбах.{{ else if eq $lang "de" }}Ankunft in Ansbach.{{ else }}Arrives in Ansbach.{{ end }}</strong> {{ if eq $lang "ru" }}Размещены в городской конюшне. Обещали одну ночь.{{ else if eq $lang "de" }}Untergebracht in einem städtischen Pferdestall. Eine Nacht versprochen.{{ else }}Placed in a city horse stable. Promised one night.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">April 24 – May 14</div>
-    <div class="timeline-text"><strong>21 nights in horse stable.</strong> Three delousing baths. Straw bedding. No information about where they'll go.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}24 апреля — 14 мая{{ else if eq $lang "de" }}24. April — 14. Mai{{ else }}April 24 – May 14{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}21 ночь в конюшне.{{ else if eq $lang "de" }}21 Nächte im Pferdestall.{{ else }}21 nights in horse stable.{{ end }}</strong> {{ if eq $lang "ru" }}Три санобработки. Соломенные подстилки. Никакой информации куда дальше.{{ else if eq $lang "de" }}Drei Entlausungsbäder. Strohbetten. Keine Information über das Ziel.{{ else }}Three delousing baths. Straw bedding. No information about where they'll go.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">~May 15, 1942</div>
-    <div class="timeline-text"><strong>Train to Würzburg.</strong> Registration and processing. "Куда — абсолютно неизвестно."</div>
+    <div class="timeline-date">~{{ if eq $lang "ru" }}15 мая{{ else if eq $lang "de" }}15. Mai{{ else }}May 15{{ end }}, 1942</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Поезд в Вюрцбург.{{ else if eq $lang "de" }}Zug nach Würzburg.{{ else }}Train to Würzburg.{{ end }}</strong> {{ if eq $lang "ru" }}Регистрация и распределение. «Куда — абсолютно неизвестно.»{{ else if eq $lang "de" }}Registrierung und Verteilung. «Куда — абсолютно неизвестно» (Wohin — absolut unbekannt).{{ else }}Registration and processing. "Куда — абсолютно неизвестно."{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">~May 8, 1942</div>
-    <div class="timeline-text"><strong>Assigned to farm in Schönaich.</strong> Commandant gives them to an old farmer. "Komm bei mir." Separated from companion Raya. Meets Serbian worker Kurban. Begins diary.</div>
+    <div class="timeline-date">~{{ if eq $lang "ru" }}8 мая{{ else if eq $lang "de" }}8. Mai{{ else }}May 8{{ end }}, 1942</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Распределена на ферму в Шёнайхе.{{ else if eq $lang "de" }}Dem Bauernhof in Schönaich zugeteilt.{{ else }}Assigned to farm in Schönaich.{{ end }}</strong> {{ if eq $lang "ru" }}Разлучена с подругой Раей. Встречает серба Курбана. Начинает дневник.{{ else if eq $lang "de" }}Getrennt von Begleiterin Raya. Trifft den serbischen Arbeiter Kurban. Beginnt Tagebuch.{{ else }}Separated from companion Raya. Meets Serbian worker Kurban. Begins diary.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">May 9–10, 1942</div>
-    <div class="timeline-text"><strong>First days of farm work.</strong> Cowshed at 4:55 AM. Cries all second night. Daily: cowshed → clover → weed beets → cowshed.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}9–10 мая 1942{{ else if eq $lang "de" }}9.–10. Mai 1942{{ else }}May 9–10, 1942{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Первые дни на ферме.{{ else if eq $lang "de" }}Erste Tage auf dem Hof.{{ else }}First days of farm work.{{ end }}</strong> {{ if eq $lang "ru" }}Коровник в 4:55 утра. Всю вторую ночь проплакала.{{ else if eq $lang "de" }}Kuhstall um 4:55 Uhr. Die ganze zweite Nacht durchgeweint.{{ else }}Cowshed at 4:55 AM. Cries all second night.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">June 15, 1942</div>
-    <div class="timeline-text"><strong>Earliest dated letter.</strong> Describes full daily schedule. Horses Pani and Ladi. "Hope to be home by winter."</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}15 июня 1942{{ else if eq $lang "de" }}15. Juni 1942{{ else }}June 15, 1942{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Первое датированное письмо.{{ else if eq $lang "de" }}Erster datierter Brief.{{ else }}Earliest dated letter.{{ end }}</strong> {{ if eq $lang "ru" }}Полный распорядок дня. Лошади Пани и Лади. «Надеюсь быть дома к зиме.»{{ else if eq $lang "de" }}Vollständiger Tagesablauf. Pferde Pani und Ladi. «Надеюсь быть дома к зиме» (Ich hoffe, bis zum Winter zu Hause zu sein).{{ else }}Full daily schedule. Horses Pani and Ladi. "Hope to be home by winter."{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">September 1942</div>
-    <div class="timeline-text"><strong>Learns to ride bicycle.</strong> Salary: 17 marks/month. Threshing with Serbian workers. Potato digging, plowing 5 hectares.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}Февраль 1943{{ else if eq $lang "de" }}Februar 1943{{ else }}February 1943{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}После Сталинграда.{{ else if eq $lang "de" }}Nach Stalingrad.{{ else }}Post-Stalingrad shift.{{ end }}</strong> {{ if eq $lang "ru" }}«Хозяева засуетились, скоро мы им покажем!» Раненые солдаты возвращаются без рук и ног.{{ else if eq $lang "de" }}«Хозяева засуетились, скоро мы им покажем!» (Die Herren werden nervös, bald werden wir es ihnen zeigen!) Verwundete Soldaten kehren ohne Arme und Beine zurück.{{ else }}"Masters suddenly fussing, soon we'll show them!" Wounded soldiers returning without arms and legs.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">November 1942</div>
-    <div class="timeline-text"><strong>Anna turns 22</strong> — birthday card confirms she is Raisa's sister (born ~1920), not mother.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}10 июля 1943{{ else if eq $lang "de" }}10. Juli 1943{{ else }}July 10, 1943{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Эдуард отправлен на фронт{{ else if eq $lang "de" }}Eduard wird an die Front geschickt{{ else }}Eduard deploys to front{{ end }}</strong> {{ if eq $lang "ru" }}через Франкфурт. Всего 4 дня отпуска.{{ else if eq $lang "de" }}über Frankfurt. Nur 4 Tage Heimaturlaub.{{ else }}via Frankfurt. Only 4 days home leave.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">December 24, 1942</div>
-    <div class="timeline-text"><strong>Christmas Eve.</strong> Sent 50 marks + 2 parcels home. Makes Ded Moroz (Grandfather Frost) for German children.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}10 августа 1943{{ else if eq $lang "de" }}10. August 1943{{ else }}August 10, 1943{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Авианалёт.{{ else if eq $lang "de" }}Luftangriff.{{ else }}Air raid.{{ end }}</strong> {{ if eq $lang "ru" }}500+ бомбардировщиков, 13 сбиты. Видно за 100 км.{{ else if eq $lang "de" }}500+ Bomber, 13 abgeschossen. Sichtbar aus 100 km Entfernung.{{ else }}500+ bombers, 13 shot down. Visible 100 km away.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">January 2, 1943</div>
-    <div class="timeline-text"><strong>New Year diary entry.</strong> "Расставание" — separation. "Родина" — Motherland. Drawings in diary margins.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}1 сентября 1943{{ else if eq $lang "de" }}1. September 1943{{ else }}September 1, 1943{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Переведена в Ганновер.{{ else if eq $lang "de" }}Versetzt nach Hannover.{{ else }}Transferred to Hannover.{{ end }}</strong> {{ if eq $lang "ru" }}Фабричная работа. Podbielskistraße 100.{{ else if eq $lang "de" }}Fabrikarbeit. Podbielskistraße 100.{{ else }}Factory work at Podbielskistraße 100.{{ end }}</div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-date">February 1943</div>
-    <div class="timeline-text"><strong>Post-Stalingrad shift.</strong> "Masters suddenly fussing, soon we'll show them!" Wounded soldiers returning without arms and legs. "Germany (cursed)."</div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">July 10, 1943</div>
-    <div class="timeline-text"><strong>Eduard deploys to front</strong> via Frankfurt. Only 4 days home leave. Hedwig and mother pack him a parcel. Schön sits beside Raisa as she writes, wishes he could read Russian.</div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">August 10, 1943</div>
-    <div class="timeline-text"><strong>Air raid.</strong> 500+ bombers, 13 shot down. Visible 100 km away. Likely the Schweinfurt or Nuremberg bombing.</div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">September 1, 1943</div>
-    <div class="timeline-text"><strong>Transferred to Hannover.</strong> Factory work at Podbielskistraße 100. Shift-based labor. Friends with Vera and Mira.</div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">May 9, 1944</div>
-    <div class="timeline-text"><strong>Diary entry — one year before VE Day.</strong> Senses the Russians approaching. The war is turning.</div>
+    <div class="timeline-date">{{ if eq $lang "ru" }}9 мая 1944{{ else if eq $lang "de" }}9. Mai 1944{{ else }}May 9, 1944{{ end }}</div>
+    <div class="timeline-text"><strong>{{ if eq $lang "ru" }}Дневниковая запись — ровно год до Дня Победы.{{ else if eq $lang "de" }}Tagebucheintrag — genau ein Jahr vor Kriegsende.{{ else }}Diary entry — one year before VE Day.{{ end }}</strong> {{ if eq $lang "ru" }}Чувствует приближение русских.{{ else if eq $lang "de" }}Spürt das Vorrücken der Russen.{{ else }}Senses the Russians approaching.{{ end }}</div>
   </div>
 
 </div>
 
-<p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.85rem;"><em>Note: Some dates are approximate, reconstructed from letter contents, postmarks, and cross-references. The diary entries from May 1942 were written retrospectively.</em></p>
+<p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.85rem;"><em>{{ if eq $lang "ru" }}Примечание: некоторые даты приблизительны, восстановлены по содержанию писем, почтовым штемпелям и перекрёстным ссылкам.{{ else if eq $lang "de" }}Hinweis: Einige Daten sind ungefähr, rekonstruiert aus Briefinhalten, Poststempeln und Querverweisen.{{ else }}Note: Some dates are approximate, reconstructed from letter contents, postmarks, and cross-references.{{ end }}</em></p>
 
 {{ end }}

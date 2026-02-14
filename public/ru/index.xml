@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Раиса Погорелова — Письма из Германии, 1942–1944</title>
+    <link>https://raisa.prokopov.me/ru/</link>
+    <description>Recent content on Раиса Погорелова — Письма из Германии, 1942–1944</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <atom:link href="https://raisa.prokopov.me/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>8 мая 1942 — Первая запись в дневнике</title>
+      <link>https://raisa.prokopov.me/ru/diary/1942-05-08-first-entry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://raisa.prokopov.me/ru/diary/1942-05-08-first-entry/</guid>
+      <description>«Первый в моей жизни дневник.» Раиса описывает отъезд из Киева 14 апреля, застывшую кровь и прибытие в Краков.</description>
+    </item>
+    <item>
+      <title>Май 1942 — Двадцать одна ночь в конюшне</title>
+      <link>https://raisa.prokopov.me/ru/diary/1942-05-08-ansbach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://raisa.prokopov.me/ru/diary/1942-05-08-ansbach/</guid>
+      <description>Пересыльный лагерь в Ансбахе. Обещали одну ночь в городской конюшне. Провели двадцать одну.</description>
+    </item>
+    <item>
+      <title>Май 1942 — Разлука</title>
+      <link>https://raisa.prokopov.me/ru/diary/1942-05-08-separation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://raisa.prokopov.me/ru/diary/1942-05-08-separation/</guid>
+      <description>Раису и её спутницу Раю распределяют на разные фермы. Момент, когда они понимают, что не будут вместе.</description>
+    </item>
+    <item>
+      <title>9–10 мая 1942 — Первые дни на ферме</title>
+      <link>https://raisa.prokopov.me/ru/diary/1942-05-09-first-days/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://raisa.prokopov.me/ru/diary/1942-05-09-first-days/</guid>
+      <description>Встреча с Курбаном. Коровник в 4:55 утра. Вторая ночь — проплакала до утра.</description>
+    </item>
+  </channel>
+</rss>

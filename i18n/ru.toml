@@ -1,0 +1,24 @@
+[home]
+other = "Главная"
+[letters]
+other = "Письма"
+[diary]
+other = "Дневник"
+[timeline]
+other = "Хронология"
+[people]
+other = "Люди"
+[map]
+other = "Карта"
+[about]
+other = "О проекте"
+[preserved_by]
+other = "Сохранено семьёй Прокоповых"
+[transcription]
+other = "Транскрипция"
+[context]
+other = "Контекст"
+[source]
+other = "Источник"
+[scan]
+other = "Оригинальный скан"

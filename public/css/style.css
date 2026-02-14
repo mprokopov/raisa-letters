@@ -103,6 +103,19 @@ blockquote {
   max-width: 100%;
   border: 1px solid var(--border);
   cursor: zoom-in;
+  transition: transform 0.2s;
+}
+.entry-scan img:hover { transform: scale(1.02); }
+.scan-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+.scan-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
 }
 .transcription {
   background: var(--bg-alt);
@@ -258,6 +271,12 @@ footer {
   letter-spacing: 0.05em;
   color: var(--text-muted);
 }
+
+/* Language switcher */
+.lang-switcher { font-size: 0.8rem; }
+.lang-switcher a { color: var(--text-muted); text-decoration: none; margin-left: 0.5rem; }
+.lang-switcher a:hover { color: var(--accent); }
+.lang-switcher .lang-active { color: var(--accent); font-weight: bold; margin-left: 0.5rem; }
 
 /* Responsive */
 @media (max-width: 600px) {

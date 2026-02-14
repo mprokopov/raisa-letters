@@ -1,0 +1,4 @@
+---
+title: "Karte"
+layout: "map"
+---

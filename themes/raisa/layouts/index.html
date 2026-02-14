@@ -1,26 +1,58 @@
 {{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+
 <div class="hero">
   <h1>Раїса Погорелова</h1>
   <div class="years">1942 — 1944</div>
-  <p class="tagline">
-    Letters and diary of a young Ukrainian woman taken from Kyiv to Nazi Germany as forced labor.
-    180 pages preserved by her family. Now transcribed for the first time.
-  </p>
+  {{ if eq $lang "ru" }}
+  <p class="tagline">Письма и дневник молодой украинки, угнанной из Киева на принудительные работы в нацистскую Германию. 180 страниц, сохранённых семьёй. Впервые расшифрованы.</p>
+  {{ else if eq $lang "de" }}
+  <p class="tagline">Briefe und Tagebuch einer jungen Ukrainerin, die aus Kyjiw zur Zwangsarbeit ins nationalsozialistische Deutschland verschleppt wurde. 180 Seiten, von der Familie bewahrt. Erstmals transkribiert.</p>
+  {{ else }}
+  <p class="tagline">Letters and diary of a young Ukrainian woman taken from Kyiv to Nazi Germany as forced labor. 180 pages preserved by her family. Now transcribed for the first time.</p>
+  {{ end }}
   <div class="quote">
     «В мгновенье когда тронулся поезд мое сердце остановилось, мне показалось что во мне застыла кровь.»
-    <div class="quote-source">— Diary, May 8, 1942. The day the train left Kyiv.</div>
+    <div class="quote-source">{{ if eq $lang "ru" }}— Дневник, 8 мая 1942. День, когда поезд ушёл из Киева.{{ else if eq $lang "de" }}— Tagebuch, 8. Mai 1942. Der Tag, als der Zug Kyjiw verließ.{{ else }}— Diary, May 8, 1942. The day the train left Kyiv.{{ end }}</div>
   </div>
 </div>
 
 <div class="stats">
-  <div class="stat"><span class="stat-number">180</span><span class="stat-label">Pages</span></div>
-  <div class="stat"><span class="stat-number">2</span><span class="stat-label">Diaries</span></div>
-  <div class="stat"><span class="stat-number">1942–44</span><span class="stat-label">Period</span></div>
-  <div class="stat"><span class="stat-number">5</span><span class="stat-label">Locations</span></div>
+  <div class="stat"><span class="stat-number">180</span><span class="stat-label">{{ if eq $lang "ru" }}Страниц{{ else if eq $lang "de" }}Seiten{{ else }}Pages{{ end }}</span></div>
+  <div class="stat"><span class="stat-number">2</span><span class="stat-label">{{ if eq $lang "ru" }}Дневника{{ else if eq $lang "de" }}Tagebücher{{ else }}Diaries{{ end }}</span></div>
+  <div class="stat"><span class="stat-number">1942–44</span><span class="stat-label">{{ if eq $lang "ru" }}Период{{ else if eq $lang "de" }}Zeitraum{{ else }}Period{{ end }}</span></div>
+  <div class="stat"><span class="stat-number">5</span><span class="stat-label">{{ if eq $lang "ru" }}Мест{{ else if eq $lang "de" }}Orte{{ else }}Locations{{ end }}</span></div>
 </div>
 
 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
+{{ if eq $lang "ru" }}
+<h2>История</h2>
+<p>14 апреля 1942 года восемнадцатилетняя Раиса Погорелова села в поезд в Киеве. Она не знала, куда едет. Через восемь дней, проехав Краков и проведя 21 ночь в конюшне в Ансбахе, она была распределена на ферму во франконской глубинке — Шёнайх, в 46 километрах к югу от Вюрцбурга.</p>
+
+<p>С собой она привезла украинский школьный зошит за 10 копеек. На обложке написала: <strong>«Дневник Deutschland»</strong>. Она заполнила его до последней страницы, вписывая текст даже вокруг таблицы умножения на задней обложке.</p>
+
+<p>Следующие два года она писала домой — сестре Анне, бабушке и детям — Гришунку и Мотику. Описывала жизнь на ферме с подъёмом в 4:55, коров, клеверные поля, доброго серба с большими карими глазами, ставшего единственным другом. Посылала домой шёлковые чулки из Вюрцбурга и носки из Голландии. По воскресеньям шила платья немецким женщинам за сахар.</p>
+
+<p>Она никогда не переставала надеяться вернуться домой.</p>
+
+<h2>Архив</h2>
+<p>Эти письма пережили войну, советскую эпоху, украинскую независимость и семейный переезд из Киева в Германию. В 2026 году Максим Прокопов — внук Раисы — оцифровал все 180 страниц и расшифровал рукописный текст с помощью ИИ.</p>
+
+{{ else if eq $lang "de" }}
+<h2>Die Geschichte</h2>
+<p>Am 14. April 1942 bestieg die achtzehnjährige Raisa Pogorelova einen Zug in Kyjiw. Sie wusste nicht, wohin die Reise ging. Acht Tage später, nach einem Halt in Krakau und 21 Nächten in einem Pferdestall in Ansbach, wurde sie einem Bauernhof in der fränkischen Provinz zugeteilt — Schönaich, 46 Kilometer südlich von Würzburg.</p>
+
+<p>Sie hatte ein ukrainisches Schulheft für 10 Kopeken mitgebracht. Auf den Umschlag schrieb sie: <strong>«Дневник Deutschland»</strong> — Tagebuch Deutschland. Sie füllte es bis zur letzten Seite und schrieb sogar um die Einmaleins-Tabelle auf der Rückseite herum.</p>
+
+<p>In den folgenden zwei Jahren schrieb sie nach Hause — an ihre Schwester Anna, ihre Großmutter und die Kinder Grischunok und Motik. Sie beschrieb das Farmleben ab 4:55 Uhr morgens, die Kühe, die Kleefelder, den freundlichen serbischen Arbeiter mit den großen braunen Augen, der ihr einziger Freund wurde. Sie schickte Seidenstrümpfe aus Würzburg und Socken aus Holland nach Hause. Sonntags nähte sie Kleider für deutsche Frauen, um Zucker zu verdienen.</p>
+
+<p>Sie hörte nie auf zu hoffen, nach Hause zu kommen.</p>
+
+<h2>Das Archiv</h2>
+<p>Diese Briefe überlebten den Krieg, die Sowjetzeit, die ukrainische Unabhängigkeit und einen Familienumzug von Kyjiw nach Deutschland. Im Jahr 2026 digitalisierte Maksym Prokopov — Raisas Enkel — alle 180 Seiten und ließ die handschriftlichen russischen Texte mit Hilfe von KI transkribieren.</p>
+
+{{ else }}
 <h2>The Story</h2>
 <p>On April 14, 1942, eighteen-year-old Raisa Pogorelova boarded a train in Kyiv. She didn't know where she was going. Eight days later, after passing through Kraków and spending 21 nights in a horse stable in Ansbach, she was assigned to a farm in the Franconian countryside — Schönaich, 46 kilometers south of Würzburg.</p>
 
@@ -32,12 +64,11 @@
 
 <h2>The Archive</h2>
 <p>These letters survived the war, the Soviet era, Ukrainian independence, and a family move from Kyiv to Germany. In 2026, Maksym Prokopov — Raisa's grandson — digitized all 180 pages and had them transcribed with the help of AI.</p>
-
-<p>This site presents the letters and diary entries with original scans, Russian transcriptions, and English context. It is a work in progress.</p>
+{{ end }}
 
 <div style="margin: 2rem 0; text-align: center;">
-  <a href="/letters/" style="margin-right: 1rem;">Read the Letters →</a>
-  <a href="/diary/">Read the Diary →</a>
+  <a href="{{ "letters/" | relLangURL }}" style="margin-right: 1rem;">{{ if eq $lang "ru" }}Читать письма →{{ else if eq $lang "de" }}Briefe lesen →{{ else }}Read the Letters →{{ end }}</a>
+  <a href="{{ "diary/" | relLangURL }}">{{ if eq $lang "ru" }}Читать дневник →{{ else if eq $lang "de" }}Tagebuch lesen →{{ else }}Read the Diary →{{ end }}</a>
 </div>
 
 {{ end }}

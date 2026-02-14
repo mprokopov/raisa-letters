@@ -3,6 +3,20 @@
   <h1>{{ .Title }}</h1>
   {{ with .Params.date_written }}<div class="entry-date">{{ . }}</div>{{ end }}
   {{ with .Params.summary }}<div class="entry-meta">{{ . }}</div>{{ end }}
+
+  {{ with .Params.scans }}
+  <div class="scan-gallery">
+    {{ range . }}
+    <div class="entry-scan">
+      <a href="{{ printf "/scans/%s.JPG" . | relURL }}" target="_blank">
+        <img src="{{ printf "/scans/%s.JPG" . | relURL }}" alt="Scan {{ . }}" loading="lazy">
+      </a>
+      <div class="scan-label">{{ . }}</div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
   {{ .Content }}
 </article>
 {{ end }}

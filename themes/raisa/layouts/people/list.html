@@ -1,147 +1,129 @@
 {{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+
+{{ if eq $lang "ru" }}
+<h1>Люди</h1>
+<p>Люди в письмах и дневнике Раисы — семья, друзья, товарищи по неволе и немецкая семья, в которой она жила.</p>
+{{ else if eq $lang "de" }}
+<h1>Personen</h1>
+<p>Die Menschen in Raisas Briefen und Tagebuch — Familie, Freunde, Mitzwangsarbeiter und die deutsche Familie, bei der sie lebte.</p>
+{{ else }}
 <h1>People</h1>
 <p>The people in Raisa's letters and diary — family, friends, fellow workers, and the German household where she lived.</p>
+{{ end }}
 
-<h2>Raisa Pogorelova</h2>
+<h2>{{ if eq $lang "ru" }}Раиса Погорелова{{ else if eq $lang "de" }}Raisa Pogorelova{{ else }}Raisa Pogorelova{{ end }}</h2>
 <div class="person-detail">
-  <p><strong>Раїса Григорівна Погорелова</strong> · Born ~1924, Kyiv · Signed her letters as Рая, Райха, Раеса, Раюха, Раїса</p>
+  <p><strong>Раїса Григорівна Погорелова</strong> · {{ if eq $lang "ru" }}Род. ~1924, Киев · Подписывала письма как{{ else if eq $lang "de" }}Geb. ~1924, Kyjiw · Unterschrieb ihre Briefe als{{ else }}Born ~1924, Kyiv · Signed her letters as{{ end }} Рая, Райха, Раеса, Раюха, Раїса</p>
+  {{ if eq $lang "ru" }}
+  <p>Восемнадцать лет, когда была угнана в Германию. Швея, автор дневника, полиглот. Свободно говорила по-немецки — «принимают меня за немку». Вела дневник под названием <em>Дневник Deutschland</em>. Отправляла посылки домой, зарабатывая 17 марок в месяц. Писала с литературным талантом и острым умом.</p>
+  {{ else if eq $lang "de" }}
+  <p>Achtzehn Jahre alt, als sie nach Deutschland verschleppt wurde. Näherin, Tagebuchschreiberin, Polyglottin. Sprach fließend Deutsch — «принимают меня за немку» (sie halten mich für eine Deutsche). Führte ein Tagebuch mit dem Titel <em>Дневник Deutschland</em>. Schickte Pakete nach Hause, obwohl sie nur 17 Mark im Monat verdiente.</p>
+  {{ else }}
   <p>Eighteen years old when taken to Germany. Seamstress, diarist, polyglot. Became fluent in German — "принимают меня за немку" (they mistake me for a German). Kept a diary she titled <em>Дневник Deutschland</em>. Sent parcels home despite earning 17 marks/month. Wrote with literary talent and sharp wit.</p>
+  {{ end }}
 </div>
 
 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-<h2>Family in Kyiv</h2>
+<h2>{{ if eq $lang "ru" }}Семья в Киеве{{ else if eq $lang "de" }}Familie in Kyjiw{{ else }}Family in Kyiv{{ end }}</h2>
 <div class="people-grid">
   <div class="person-card">
     <h3>Анна (Аня) Погорелова</h3>
-    <div class="role">Sister · Born ~1920</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Main correspondent. Initially assumed to be Raisa's mother — confirmed as <strong>sister</strong> by a birthday card (turned 22 in November 1942). Raisa translates Anna's letters for the German family: "They say they're very smart and interesting."</p>
+    <div class="role">{{ if eq $lang "ru" }}Сестра · Род. ~1920{{ else if eq $lang "de" }}Schwester · Geb. ~1920{{ else }}Sister · Born ~1920{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Основной адресат. Первоначально считалась матерью Раисы — подтверждено как <strong>сестра</strong> по открытке на день рождения (исполнилось 22 в ноябре 1942). Раиса переводила письма Анны для немецкой семьи: «Говорят, что очень умное, интересное».{{ else if eq $lang "de" }}Hauptkorrespondentin. Zunächst als Raisas Mutter angenommen — durch eine Geburtstagskarte als <strong>Schwester</strong> bestätigt (wurde 22 im November 1942). Raisa übersetzte Annas Briefe für die deutsche Familie: «Говорят, что очень умное, интересное» (Sie sagen, die Briefe seien sehr klug und interessant).{{ else }}Main correspondent. Initially assumed to be Raisa's mother — confirmed as <strong>sister</strong> by a birthday card (turned 22 in November 1942). Raisa translates Anna's letters for the German family: "They say they're very smart and interesting."{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Бабушка</h3>
-    <div class="role">Grandmother</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Lives in Kyiv. Writes letters to Raisa. One of the primary addressees.</p>
+    <div class="role">{{ if eq $lang "ru" }}Бабушка{{ else if eq $lang "de" }}Großmutter{{ else }}Grandmother{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Живёт в Киеве. Пишет Раисе письма.{{ else if eq $lang "de" }}Lebt in Kyjiw. Schreibt Raisa Briefe.{{ else }}Lives in Kyiv. Writes letters to Raisa.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Гришунок / Гриценок</h3>
-    <div class="role">Boy (nephew or younger sibling)</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">"Маленький папашник." Raisa draws him a rabbit cage diagram, explains plowing, sends pencils and erasers. He writes back.</p>
+    <div class="role">{{ if eq $lang "ru" }}Мальчик (племянник или младший брат){{ else if eq $lang "de" }}Junge (Neffe oder jüngerer Bruder){{ else }}Boy (nephew or younger sibling){{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}«Маленький папашник». Раиса нарисовала ему схему кроличьей клетки, объяснила вспашку, посылала карандаши и ластики.{{ else if eq $lang "de" }}«Маленький папашник» (kleiner Ernährer). Raisa zeichnete ihm einen Kaninchenstall-Plan, erklärte das Pflügen, schickte Bleistifte und Radiergummis.{{ else }}"Маленький папашник." Raisa draws him a rabbit cage diagram, explains plowing, sends pencils and erasers.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Мотик / Мотроша</h3>
-    <div class="role">Boy (nephew or younger sibling)</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Told to work hard. Raisa sends him wooden sandals (size 34).</p>
-  </div>
-  <div class="person-card">
-    <h3>Мамочка & Батько</h3>
-    <div class="role">Parents (separated)</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Both mentioned but rarely. Parents appear to be separated.</p>
+    <div class="role">{{ if eq $lang "ru" }}Мальчик{{ else if eq $lang "de" }}Junge{{ else }}Boy{{ end }}</div>
   </div>
   <div class="person-card">
     <h3>Дядя Ваня</h3>
-    <div class="role">Uncle</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">With family: Лёля, Катя, Валя. Raisa writes to him but gets no reply.</p>
+    <div class="role">{{ if eq $lang "ru" }}Дядя{{ else if eq $lang "de" }}Onkel{{ else }}Uncle{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}С семьёй: Лёля, Катя, Валя. Раиса пишет ему, но ответа нет.{{ else if eq $lang "de" }}Mit Familie: Ljolya, Katja, Walja. Raisa schreibt ihm, aber erhält keine Antwort.{{ else }}With family: Ljolya, Katya, Valya. Raisa writes to him but gets no reply.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Толик</h3>
-    <div class="role">Family member</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Never writes! Finished school at 99%. Raisa repeatedly asks him to write.</p>
+    <div class="role">{{ if eq $lang "ru" }}Родственник{{ else if eq $lang "de" }}Verwandter{{ else }}Family member{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Никогда не пишет! Окончил школу на 99%.{{ else if eq $lang "de" }}Schreibt nie! Schloss die Schule mit 99% ab.{{ else }}Never writes! Finished school at 99%.{{ end }}</p>
   </div>
 </div>
 
-<h2>The Farm — Schönaich</h2>
+<h2>{{ if eq $lang "ru" }}Ферма — Шёнайх{{ else if eq $lang "de" }}Der Bauernhof — Schönaich{{ else }}The Farm — Schönaich{{ end }}</h2>
 <div class="people-grid">
   <div class="person-card">
     <h3>Walter</h3>
-    <div class="role">Host farmer (old master)</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">First name Walter. Owns the farm in Schönaich. Hunts foxes and hares. "Komm bei mir" — the first German words Raisa heard from her employer.</p>
+    <div class="role">{{ if eq $lang "ru" }}Хозяин фермы{{ else if eq $lang "de" }}Bauer (Hofbesitzer){{ else }}Host farmer{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Охотится на лис и зайцев. «Komm bei mir» — первые немецкие слова, которые Раиса услышала от работодателя.{{ else if eq $lang "de" }}Jagt Füchse und Hasen. «Komm bei mir» — die ersten deutschen Worte, die Raisa von ihrem Arbeitgeber hörte.{{ else }}Hunts foxes and hares. "Komm bei mir" — the first German words Raisa heard from her employer.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Ludwig (Людвіг)</h3>
-    <div class="role">Son · Young master</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Hunter. Works in the cowshed alongside Kurban at 4:55 AM. Mows clover. Later has a conflict with Kurban that leads to Kurban's departure.</p>
+    <div class="role">{{ if eq $lang "ru" }}Сын · Молодой хозяин{{ else if eq $lang "de" }}Sohn · Junger Bauer{{ else }}Son · Young master{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Охотник. Работает в коровнике рядом с Курбаном с 4:55 утра. Косит клевер.{{ else if eq $lang "de" }}Jäger. Arbeitet im Kuhstall neben Kurban ab 4:55 Uhr morgens. Mäht Klee.{{ else }}Hunter. Works in the cowshed alongside Kurban at 4:55 AM. Mows clover.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Hedwig (Гетвіг)</h3>
-    <div class="role">Daughter · Same age as Anna (~22)</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Close to Raisa. Gifted her gold earrings. Reads Raisa's family letters with interest. Takes photographs. Packs parcels for Eduard at the front.</p>
+    <div class="role">{{ if eq $lang "ru" }}Дочь · Ровесница Анны (~22){{ else if eq $lang "de" }}Tochter · Im Alter von Anna (~22){{ else }}Daughter · Same age as Anna (~22){{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Близка с Раисой. Подарила ей золотые серёжки. Фотографирует. Пакует посылки для Эдуарда на фронте.{{ else if eq $lang "de" }}Raisa nahestehend. Schenkte ihr goldene Ohrringe. Fotografiert. Packt Pakete für Eduard an der Front.{{ else }}Close to Raisa. Gifted her gold earrings. Takes photographs. Packs parcels for Eduard at the front.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Eduard (Едуард)</h3>
-    <div class="role">Son · ~24 · Soldier</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">On the Eastern Front. <strong>Anti-war views.</strong> Wounded in arm, was in Kyiv. Deployed via Frankfurt on July 10, 1943 — only 4 days home leave. "Очень хороший человек." Invites Raisa to the forest (hunting?) on his visits home. In love with Anna's photo.</p>
+    <div class="role">{{ if eq $lang "ru" }}Сын · ~24 · Солдат{{ else if eq $lang "de" }}Sohn · ~24 · Soldat{{ else }}Son · ~24 · Soldier{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}На Восточном фронте. <strong>Антивоенные взгляды.</strong> Ранен в руку, был в Киеве. Отправлен через Франкфурт 10 июля 1943 — всего 4 дня отпуска. «Очень хороший человек.» Влюблён в фотографию Анны.{{ else if eq $lang "de" }}An der Ostfront. <strong>Kriegsgegner.</strong> Am Arm verwundet, war in Kyjiw. Am 10. Juli 1943 über Frankfurt an die Front geschickt — nur 4 Tage Heimaturlaub. «Очень хороший человек» (ein sehr guter Mensch). Verliebt in Annas Foto.{{ else }}On the Eastern Front. <strong>Anti-war views.</strong> Wounded in arm, was in Kyiv. Deployed via Frankfurt on July 10, 1943 — only 4 days home leave. "Очень хороший человек." In love with Anna's photo.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>"Schön" (Шён)</h3>
-    <div class="role">Son · ~21</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">"Very kind, cultured, attentive." Clearly fond of Raisa — calls her "грушка, слива, яблочко — всё только моей Рай." Sits beside her while she writes at night, wishes he could read Russian.</p>
-  </div>
-  <div class="person-card">
-    <h3>Old Mistress</h3>
-    <div class="role">Walter's wife</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Ill. Mentioned occasionally.</p>
+    <div class="role">{{ if eq $lang "ru" }}Сын · ~21{{ else if eq $lang "de" }}Sohn · ~21{{ else }}Son · ~21{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}«Очень добрый, культурный, внимательный.» Явно неравнодушен к Раисе — зовёт её «грушка, слива, яблочко — всё только моей Рай». Сидит рядом, пока она пишет, мечтает читать по-русски.{{ else if eq $lang "de" }}«Sehr freundlich, kultiviert, aufmerksam.» Offensichtlich in Raisa verliebt — nennt sie «грушка, слива, яблочко» (Birne, Pflaume, Äpfelchen — alles nur für meine Raya). Sitzt neben ihr, während sie schreibt, wünscht sich, Russisch lesen zu können.{{ else }}"Very kind, cultured, attentive." Clearly fond of Raisa — calls her "грушка, слива, яблочко — всё только моей Рай." Sits beside her while she writes at night, wishes he could read Russian.{{ end }}</p>
   </div>
 </div>
 
-<h2>Fellow Workers</h2>
+<h2>{{ if eq $lang "ru" }}Товарищи по неволе{{ else if eq $lang "de" }}Mitzwangsarbeiter{{ else }}Fellow Workers{{ end }}</h2>
 <div class="people-grid">
   <div class="person-card">
     <h3>Vladislav Kurbanbaiev (Курбан)</h3>
-    <div class="role">Serbian forced laborer</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;"><strong>"Высокий чёрный с большими карими глазами."</strong> Tall, dark, big brown eyes. Already 15 months at the farm when Raisa arrived. Spoke German well. Her "единственный друг и собеседник" — only friend and conversation partner. Married, 2 children. Later left after conflict with Ludwig; replaced by Danilo.</p>
-  </div>
-  <div class="person-card">
-    <h3>Danilo (Данило)</h3>
-    <div class="role">Serbian worker</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Replaced Kurban at the farm.</p>
+    <div class="role">{{ if eq $lang "ru" }}Сербский подневольный рабочий{{ else if eq $lang "de" }}Serbischer Zwangsarbeiter{{ else }}Serbian forced laborer{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}<strong>«Высокий чёрный с большими карими глазами.»</strong> Уже 15 месяцев на ферме, когда приехала Раиса. Хорошо говорил по-немецки. Её «единственный друг и собеседник». Женат, 2 детей. Позже ушёл после конфликта с Людвигом.{{ else if eq $lang "de" }}<strong>«Высокий чёрный с большими карими глазами»</strong> (Groß, dunkelhaarig, mit großen braunen Augen). Bereits 15 Monate auf dem Hof, als Raisa ankam. Sprach gut Deutsch. Ihr «единственный друг и собеседник» (einziger Freund und Gesprächspartner). Verheiratet, 2 Kinder.{{ else }}<strong>"Высокий чёрный с большими карими глазами."</strong> Tall, dark, big brown eyes. Already 15 months at the farm when Raisa arrived. Spoke German well. Her "единственный друг и собеседник" — only friend and conversation partner. Married, 2 children.{{ end }}</p>
   </div>
   <div class="person-card">
     <h3>Рая / Реля Ш.</h3>
-    <div class="role">Ukrainian Ostarbeiter · Companion from Kyiv</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Traveled with Raisa from Kyiv. Separated at neighboring farm — the moment is one of the most emotional in the diary. Didn't speak German; Raisa translated for her. Her farmer ran a beer hall. They saw each other on Sundays.</p>
+    <div class="role">{{ if eq $lang "ru" }}Украинская остарбайтерша · Подруга из Киева{{ else if eq $lang "de" }}Ukrainische Zwangsarbeiterin · Begleiterin aus Kyjiw{{ else }}Ukrainian Ostarbeiter · Companion from Kyiv{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Ехала с Раисой из Киева. Разлучены на соседних фермах — один из самых эмоциональных моментов дневника. Не говорила по-немецки; Раиса переводила для неё.{{ else if eq $lang "de" }}Reiste mit Raisa aus Kyjiw. An benachbarte Höfe getrennt — einer der emotionalsten Momente im Tagebuch. Sprach kein Deutsch; Raisa übersetzte für sie.{{ else }}Traveled with Raisa from Kyiv. Separated at neighboring farm — the moment is one of the most emotional in the diary. Didn't speak German; Raisa translated for her.{{ end }}</p>
   </div>
   <div class="person-card">
-    <h3>Worker from Poltava</h3>
-    <div class="role">Ukrainian · 25 years old</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Had an accordion. Arrived later.</p>
-  </div>
-  <div class="person-card">
-    <h3>Slovak Worker</h3>
-    <div class="role">At Raisa's farm</div>
-    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Mentioned in passing.</p>
+    <h3>Danilo (Данило)</h3>
+    <div class="role">{{ if eq $lang "ru" }}Сербский рабочий{{ else if eq $lang "de" }}Serbischer Arbeiter{{ else }}Serbian worker{{ end }}</div>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ if eq $lang "ru" }}Заменил Курбана на ферме.{{ else if eq $lang "de" }}Ersetzte Kurban auf dem Hof.{{ else }}Replaced Kurban at the farm.{{ end }}</p>
   </div>
 </div>
 
-<h2>Correspondence Network</h2>
-<p>Ukrainians scattered across Germany and occupied Kyiv, connected by letters:</p>
+<h2>{{ if eq $lang "ru" }}Переписка{{ else if eq $lang "de" }}Korrespondenznetzwerk{{ else }}Correspondence Network{{ end }}</h2>
 <div class="people-grid">
   <div class="person-card">
     <h3>Наталія (Ната) Лепкова</h3>
-    <div class="role">Friend · Голосеєвська 15, Kyiv</div>
+    <div class="role">{{ if eq $lang "ru" }}Подруга · Голосеевская 15, Киев{{ else if eq $lang "de" }}Freundin · Holossijiws'ka 15, Kyjiw{{ else }}Friend · Голосеєвська 15, Kyiv{{ end }}</div>
   </div>
   <div class="person-card">
     <h3>Тамара Козуб</h3>
-    <div class="role">Friend / classmate</div>
+    <div class="role">{{ if eq $lang "ru" }}Подруга / одноклассница{{ else if eq $lang "de" }}Freundin / Klassenkameradin{{ else }}Friend / classmate{{ end }}</div>
   </div>
   <div class="person-card">
     <h3>Шура Бодрова</h3>
-    <div class="role">In Magdeburg (also Ostarbeiter)</div>
-  </div>
-  <div class="person-card">
-    <h3>Оля Бурченко</h3>
-    <div class="role">Friend</div>
-  </div>
-  <div class="person-card">
-    <h3>Масha Кодій</h3>
-    <div class="role">Friend · Совська 58, Kyiv</div>
+    <div class="role">{{ if eq $lang "ru" }}В Магдебурге (тоже остарбайтер){{ else if eq $lang "de" }}In Magdeburg (ebenfalls Zwangsarbeiterin){{ else }}In Magdeburg (also Ostarbeiter){{ end }}</div>
   </div>
   <div class="person-card">
     <h3>Вера & Міра</h3>
-    <div class="role">Friends at Hannover factory</div>
-  </div>
-  <div class="person-card">
-    <h3>Стасенко Віктор</h3>
-    <div class="role">Worker (Hannover period)</div>
+    <div class="role">{{ if eq $lang "ru" }}Подруги на фабрике в Ганновере{{ else if eq $lang "de" }}Freundinnen in der Fabrik in Hannover{{ else }}Friends at Hannover factory{{ end }}</div>
   </div>
 </div>
 

@@ -1,0 +1,24 @@
+[home]
+other = "Startseite"
+[letters]
+other = "Briefe"
+[diary]
+other = "Tagebuch"
+[timeline]
+other = "Zeitstrahl"
+[people]
+other = "Personen"
+[map]
+other = "Karte"
+[about]
+other = "Über das Projekt"
+[preserved_by]
+other = "Bewahrt von der Familie Prokopov"
+[transcription]
+other = "Transkription"
+[context]
+other = "Kontext"
+[source]
+other = "Quelle"
+[scan]
+other = "Originalscan"

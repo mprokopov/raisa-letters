@@ -1,0 +1,24 @@
+[home]
+other = "Home"
+[letters]
+other = "Letters"
+[diary]
+other = "Diary"
+[timeline]
+other = "Timeline"
+[people]
+other = "People"
+[map]
+other = "Map"
+[about]
+other = "About"
+[preserved_by]
+other = "Preserved by the Prokopov family"
+[transcription]
+other = "Transcription"
+[context]
+other = "Context"
+[source]
+other = "Source"
+[scan]
+other = "Original Scan"

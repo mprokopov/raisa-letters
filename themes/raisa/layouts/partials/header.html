@@ -1,10 +1,23 @@
 <header>
   <div class="container">
-    <div class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></div>
-    <div class="site-subtitle">{{ .Site.Params.subtitle }}</div>
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
+      <div>
+        <div class="site-title"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></div>
+        <div class="site-subtitle">{{ .Site.Params.subtitle }}</div>
+      </div>
+      <div class="lang-switcher">
+        {{ range .Site.Languages }}
+          {{ if eq $.Site.Language.Lang .Lang }}
+            <span class="lang-active">{{ .LanguageName }}</span>
+          {{ else }}
+            <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
     <nav>
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+        <a href="{{ .URL | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
   </div>

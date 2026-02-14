@@ -1,0 +1,4 @@
+---
+title: "Люди"
+layout: "people"
+---
