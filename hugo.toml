@@ -42,39 +42,92 @@ defaultContentLanguageInSubdir = false
 [params]
   author = "Maksym Prokopov"
 
-[menu]
-  [[menu.main]]
-    identifier = "home"
+[languages.en.menu]
+  [[languages.en.menu.main]]
     name = "Home"
-    url = "/"
+    pageRef = "/"
     weight = 1
-  [[menu.main]]
-    identifier = "letters"
+  [[languages.en.menu.main]]
     name = "Letters"
-    url = "/letters/"
+    pageRef = "/letters"
     weight = 2
-  [[menu.main]]
-    identifier = "diary"
+  [[languages.en.menu.main]]
     name = "Diary"
-    url = "/diary/"
+    pageRef = "/diary"
     weight = 3
-  [[menu.main]]
-    identifier = "timeline"
+  [[languages.en.menu.main]]
     name = "Timeline"
-    url = "/timeline/"
+    pageRef = "/timeline"
     weight = 4
-  [[menu.main]]
-    identifier = "people"
+  [[languages.en.menu.main]]
     name = "People"
-    url = "/people/"
+    pageRef = "/people"
     weight = 5
-  [[menu.main]]
-    identifier = "map"
+  [[languages.en.menu.main]]
     name = "Map"
-    url = "/map/"
+    pageRef = "/map"
     weight = 6
-  [[menu.main]]
-    identifier = "about"
+  [[languages.en.menu.main]]
     name = "About"
-    url = "/about/"
+    pageRef = "/about"
+    weight = 7
+
+[languages.ru.menu]
+  [[languages.ru.menu.main]]
+    name = "Главная"
+    pageRef = "/"
+    weight = 1
+  [[languages.ru.menu.main]]
+    name = "Письма"
+    pageRef = "/letters"
+    weight = 2
+  [[languages.ru.menu.main]]
+    name = "Дневник"
+    pageRef = "/diary"
+    weight = 3
+  [[languages.ru.menu.main]]
+    name = "Хронология"
+    pageRef = "/timeline"
+    weight = 4
+  [[languages.ru.menu.main]]
+    name = "Люди"
+    pageRef = "/people"
+    weight = 5
+  [[languages.ru.menu.main]]
+    name = "Карта"
+    pageRef = "/map"
+    weight = 6
+  [[languages.ru.menu.main]]
+    name = "О проекте"
+    pageRef = "/about"
+    weight = 7
+
+[languages.de.menu]
+  [[languages.de.menu.main]]
+    name = "Startseite"
+    pageRef = "/"
+    weight = 1
+  [[languages.de.menu.main]]
+    name = "Briefe"
+    pageRef = "/letters"
+    weight = 2
+  [[languages.de.menu.main]]
+    name = "Tagebuch"
+    pageRef = "/diary"
+    weight = 3
+  [[languages.de.menu.main]]
+    name = "Zeitstrahl"
+    pageRef = "/timeline"
+    weight = 4
+  [[languages.de.menu.main]]
+    name = "Personen"
+    pageRef = "/people"
+    weight = 5
+  [[languages.de.menu.main]]
+    name = "Karte"
+    pageRef = "/map"
+    weight = 6
+  [[languages.de.menu.main]]
+    name = "Über"
+    pageRef = "/about"
     weight = 7
