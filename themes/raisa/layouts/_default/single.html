@@ -8,8 +8,8 @@
   <div class="scan-gallery">
     {{ range . }}
     <div class="entry-scan">
-      <a href="{{ printf "/scans/%s.JPG" . | relURL }}" target="_blank">
-        <img src="{{ printf "/scans/%s.JPG" . | relURL }}" alt="Scan {{ . }}" loading="lazy">
+      <a href="{{ printf "scans/%s.JPG" . | relURL }}" target="_blank">
+        <img src="{{ printf "scans/%s.JPG" . | relURL }}" alt="Scan {{ . }}" loading="lazy">
       </a>
       <div class="scan-label">{{ . }}</div>
     </div>
