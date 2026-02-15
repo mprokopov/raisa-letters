@@ -1,0 +1,33 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+
+    - name: Hugo setup
+      uses: peaceiris/actions-hugo@v3.0.0
+      with:
+        hugo-version: '0.142.0'
+        extended: true
+
+    - name: Build
+      run: hugo --gc --minify -b https://raisa-diary-1942.org
+
+    - name: Deploy to CloudFlare
+      uses: cloudflare/wrangler-action@v3
+      with:
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: 777414c2d4e87234087ebac4685e7df6
+        command: pages deploy . --project-name=raisa-diary-1942
+        workingDirectory: public
