@@ -2,9 +2,12 @@
 {{ $lang := .Site.Language.Lang }}
 
 <div class="hero" style="position: relative;">
-  <div class="hero-image" style="margin: 0 auto 2rem; max-width: 700px; display: flex; gap: 1rem; justify-content: center; align-items: flex-start;">
-    <img src="{{ "scans/SCAN0165.JPG" | relURL }}" alt="{{ if eq $lang "ru" }}Первая страница дневника Раисы, 8 мая 1942{{ else if eq $lang "de" }}Erste Tagebuchseite von Raisa, 8. Mai 1942{{ else }}First diary page by Raisa, May 8, 1942{{ end }}" style="max-height: 350px; width: auto; border: 1px solid var(--border); box-shadow: 4px 4px 15px rgba(0,0,0,0.3); transform: rotate(-2deg);">
-    <img src="{{ "scans/SCAN0018.JPG" | relURL }}" alt="{{ if eq $lang "ru" }}Почтовая карточка остарбайтера с цензурой, 1943{{ else if eq $lang "de" }}Ostarbeiter-Postkarte mit Zensur, 1943{{ else }}Censored Ostarbeiter postcard, 1943{{ end }}" style="max-height: 300px; width: auto; border: 1px solid var(--border); box-shadow: 4px 4px 15px rgba(0,0,0,0.3); transform: rotate(1.5deg); margin-top: 2rem;">
+  <div class="hero-image" style="margin: 0 auto 2rem; max-width: 750px; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
+    <div style="text-align: center; flex: 0 0 auto;">
+      <img src="{{ "scans/SCAN0188.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса Погорелова, 18 лет. Эбрах, Германия. 16 сентября 1942{{ else if eq $lang "de" }}Raisa Pogorelova, 18 Jahre. Ebrach, Deutschland. 16. September 1942{{ else }}Raisa Pogorelova, age 18. Ebrach, Germany. September 16, 1942{{ end }}" style="max-height: 450px; max-width: 80vw; width: auto; filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.35)); transform: rotate(-3deg);">
+      <div style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted, #8b7d6b); font-style: italic;">{{ if eq $lang "ru" }}Раиса, 18 лет. Эбрах, 16 сентября 1942{{ else if eq $lang "de" }}Raisa, 18 Jahre. Ebrach, 16. September 1942{{ else }}Raisa, age 18. Ebrach, September 16, 1942{{ end }}</div>
+    </div>
+    <img src="{{ "scans/SCAN0165.JPG" | relURL }}" alt="{{ if eq $lang "ru" }}Первая страница дневника Раисы, 8 мая 1942{{ else if eq $lang "de" }}Erste Tagebuchseite von Raisa, 8. Mai 1942{{ else }}First diary page by Raisa, May 8, 1942{{ end }}" style="max-height: 220px; max-width: 60vw; width: auto; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25)); transform: rotate(2.5deg);">
   </div>
   <h1>Раїса Погорелова</h1>
   <div class="years">1942 — 1944</div>

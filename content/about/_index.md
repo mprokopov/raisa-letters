@@ -4,7 +4,7 @@ title: "About This Archive"
 
 ## Raisa Grygorievna Pogorelova (Раїса Григорівна Погорелова)
 
-Born around 1924 in Kyiv, Ukraine. Taken to Germany as an Ostarbeiter (forced laborer) in April 1942 at age 18.
+Born September 16, 1924, in Kyiv, Ukraine. Taken to Germany as an Ostarbeiter (forced laborer) in April 1942 at age 17, turning 18 that September.
 
 She worked on a farm in Schönaich, a village in Franconia, Bavaria — 46 km south of Würzburg. Her host was a farmer named Walter, whose family included sons Ludwig, Eduard (~24, a soldier), and "Schön" (~21), and daughter Hedwig.
 
@@ -45,6 +45,24 @@ Nata Lepkova, Tamara Kozub, Shura Bodrova (Magdeburg), Olya Burchenko, Mascha Ko
 ## Geographic Route
 
 **Kyiv** → **Kraków** (1.5 day stop) → **Ansbach** (21 nights in horse stable) → **Würzburg** (registration) → **Schönaich** (farm, May 1942 – Aug 1943) → **Hannover** (factory, from Sept 1943)
+
+## Photographs
+
+Only two photographs of Raisa from the war years are known to survive.
+
+<div style="text-align: center; margin: 2rem 0;">
+<img src="/scans/SCAN0188.webp" alt="Raisa Pogorelova, age 18" style="max-height: 400px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+<div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa Pogorelova, age 18. Photographed on her birthday, September 16, 1942, in the village of Ebrach, Germany.</div>
+</div>
+
+On the back she wrote: *"16/IX 1942. Deutschland dorf Ebrach. Фотографировалась в день рождения. Сегодня 16/IX-1942 года мне исполнилось 18 лет."* — "Photographed on my birthday. Today, September 16, 1942, I turned 18."
+
+<div style="text-align: center; margin: 2rem 0;">
+<img src="/scans/SCAN0189.webp" alt="Raisa with a companion, 1944" style="max-height: 300px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+<div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa (left) with a companion. Ebrach, September 1944.</div>
+</div>
+
+The back is inscribed simply: *"Ebrach IX 1944г."* — This photograph, taken in September 1944, is the latest dated artifact in the archive, extending the documented timeline a full year beyond the last surviving letter.
 
 ## Contact
 

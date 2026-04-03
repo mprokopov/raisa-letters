@@ -4,7 +4,7 @@ title: "Über das Projekt"
 
 ## Raisa Grigorjewna Pogorelowa (Раїса Григорівна Погорелова)
 
-Geboren um 1924 in Kiew, Ukraine. Im April 1942 im Alter von 18 Jahren als Ostarbeiterin (Zwangsarbeiterin) nach Deutschland verschleppt.
+Geboren am 16. September 1924 in Kiew, Ukraine. Im April 1942 im Alter von 17 Jahren als Ostarbeiterin (Zwangsarbeiterin) nach Deutschland verschleppt — sie wurde erst im September 18.
 
 Sie arbeitete auf einem Bauernhof in Schönaich, einem Dorf in Franken, Bayern — 46 km südlich von Würzburg. Ihr Bauer hieß Walter; zur Familie gehörten die Söhne Ludwig, Eduard (~24, Soldat) und „Schön" (~21) sowie die Tochter Hedwig.
 
@@ -45,6 +45,24 @@ Nata Lepkova, Tamara Kosub, Schura Bodrova (Magdeburg), Olja Burtschenko, Mascha
 ## Geografische Route
 
 **Kiew** → **Krakau** (1,5 Tage Aufenthalt) → **Ansbach** (21 Nächte im Pferdestall) → **Würzburg** (Registrierung) → **Schönaich** (Bauernhof, Mai 1942 – Aug. 1943) → **Hannover** (Fabrik, ab Sept. 1943)
+
+## Fotografien
+
+Nur zwei Fotografien von Raisa aus der Kriegszeit sind erhalten.
+
+<div style="text-align: center; margin: 2rem 0;">
+<img src="/scans/SCAN0188.webp" alt="Raisa Pogorelova, 18 Jahre" style="max-height: 400px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+<div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa Pogorelova, 18 Jahre. Fotografiert an ihrem Geburtstag, dem 16. September 1942, im Dorf Ebrach, Deutschland.</div>
+</div>
+
+Auf der Rückseite in ihrer Handschrift: *«16/IX 1942. Deutschland dorf Ebrach. Фотографировалась в день рождения. Сегодня 16/IX-1942 года мне исполнилось 18 лет.»* — „Fotografiert an meinem Geburtstag. Heute, am 16. September 1942, bin ich 18 Jahre alt geworden."
+
+<div style="text-align: center; margin: 2rem 0;">
+<img src="/scans/SCAN0189.webp" alt="Raisa mit einer Begleiterin, 1944" style="max-height: 300px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+<div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa (links) mit einer Begleiterin. Ebrach, September 1944.</div>
+</div>
+
+Auf der Rückseite: *«Ebrach IX 1944г.»* — Diese Fotografie aus dem September 1944 ist das späteste datierte Artefakt im Archiv und erweitert die dokumentierte Chronologie um ein ganzes Jahr nach dem letzten erhaltenen Brief.
 
 ## Kontakt
 
