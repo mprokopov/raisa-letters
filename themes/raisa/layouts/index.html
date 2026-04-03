@@ -4,7 +4,7 @@
 <div class="hero" style="position: relative;">
   <div class="hero-image" style="margin: 0 auto 2rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: center; padding: 0 1rem;">
     <div style="text-align: center;">
-      <div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; height: min(500px, 65vh); aspect-ratio: 752/1200;">
+      <div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; width: min(380px, 80vw); height: min(600px, 70vh);">
         <div class="photo-flip-inner" style="transform-origin: center center; rotate: -3deg;">
           <div class="photo-flip-front">
             <img src="{{ "scans/SCAN0188.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса Погорелова, 18 лет. Эбрах, Германия. 16 сентября 1942{{ else if eq $lang "de" }}Raisa Pogorelova, 18 Jahre. Ebrach, Deutschland. 16. September 1942{{ else }}Raisa Pogorelova, age 18. Ebrach, Germany. September 16, 1942{{ end }}" style="filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));">
