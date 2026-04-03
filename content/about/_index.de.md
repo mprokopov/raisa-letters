@@ -51,15 +51,35 @@ Nata Lepkova, Tamara Kosub, Schura Bodrova (Magdeburg), Olja Burtschenko, Mascha
 Nur zwei Fotografien von Raisa aus der Kriegszeit sind erhalten.
 
 <div style="text-align: center; margin: 2rem 0;">
+<div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; height: 400px;">
+<div class="photo-flip-inner" style="height: 100%;">
+<div class="photo-flip-front">
 <img src="/scans/SCAN0188.webp" alt="Raisa Pogorelova, 18 Jahre" style="max-height: 400px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+<div class="photo-flip-back">
+<img src="/scans/SCAN0187.webp" alt="Rückseite" style="filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+</div>
+</div>
 <div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa Pogorelova, 18 Jahre. Fotografiert an ihrem Geburtstag, dem 16. September 1942, im Dorf Ebrach, Deutschland.</div>
+<div class="photo-flip-hint">klicken zum Umdrehen</div>
 </div>
 
 Auf der Rückseite in ihrer Handschrift: *«16/IX 1942. Deutschland dorf Ebrach. Фотографировалась в день рождения. Сегодня 16/IX-1942 года мне исполнилось 18 лет.»* — „Fotografiert an meinem Geburtstag. Heute, am 16. September 1942, bin ich 18 Jahre alt geworden."
 
 <div style="text-align: center; margin: 2rem 0;">
+<div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; height: 300px;">
+<div class="photo-flip-inner" style="height: 100%;">
+<div class="photo-flip-front">
 <img src="/scans/SCAN0189.webp" alt="Raisa mit einer Begleiterin, 1944" style="max-height: 300px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+<div class="photo-flip-back">
+<img src="/scans/SCAN0190.webp" alt="Rückseite" style="filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+</div>
+</div>
 <div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa (links) mit einer Begleiterin. Ebrach, September 1944.</div>
+<div class="photo-flip-hint">klicken zum Umdrehen</div>
 </div>
 
 Auf der Rückseite: *«Ebrach IX 1944г.»* — Diese Fotografie aus dem September 1944 ist das späteste datierte Artefakt im Archiv und erweitert die dokumentierte Chronologie um ein ganzes Jahr nach dem letzten erhaltenen Brief.

@@ -51,15 +51,35 @@ Nata Lepkova, Tamara Kozub, Shura Bodrova (Magdeburg), Olya Burchenko, Mascha Ko
 Only two photographs of Raisa from the war years are known to survive.
 
 <div style="text-align: center; margin: 2rem 0;">
+<div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; height: 400px;">
+<div class="photo-flip-inner" style="height: 100%;">
+<div class="photo-flip-front">
 <img src="/scans/SCAN0188.webp" alt="Raisa Pogorelova, age 18" style="max-height: 400px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+<div class="photo-flip-back">
+<img src="/scans/SCAN0187.webp" alt="Back inscription" style="filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+</div>
+</div>
 <div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa Pogorelova, age 18. Photographed on her birthday, September 16, 1942, in the village of Ebrach, Germany.</div>
+<div class="photo-flip-hint">click to turn over</div>
 </div>
 
 On the back she wrote: *"16/IX 1942. Deutschland dorf Ebrach. Фотографировалась в день рождения. Сегодня 16/IX-1942 года мне исполнилось 18 лет."* — "Photographed on my birthday. Today, September 16, 1942, I turned 18."
 
 <div style="text-align: center; margin: 2rem 0;">
+<div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; height: 300px;">
+<div class="photo-flip-inner" style="height: 100%;">
+<div class="photo-flip-front">
 <img src="/scans/SCAN0189.webp" alt="Raisa with a companion, 1944" style="max-height: 300px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+<div class="photo-flip-back">
+<img src="/scans/SCAN0190.webp" alt="Back inscription" style="filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+</div>
+</div>
 <div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Raisa (left) with a companion. Ebrach, September 1944.</div>
+<div class="photo-flip-hint">click to turn over</div>
 </div>
 
 The back is inscribed simply: *"Ebrach IX 1944г."* — This photograph, taken in September 1944, is the latest dated artifact in the archive, extending the documented timeline a full year beyond the last surviving letter.
