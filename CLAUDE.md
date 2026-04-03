@@ -46,6 +46,16 @@ content/
 
 180 JPG files in `static/scans/` (SCAN0003.JPG – SCAN0182.JPG). Referenced by filename stem in front matter `scans` array. Displayed via `scan-gallery` CSS grid in single.html.
 
+### Photographs
+
+4 WebP files in `static/scans/` (SCAN0187–SCAN0190) — the only known wartime photos of Raisa:
+- **SCAN0187.webp** — Back of birthday portrait (inscription: date, location, "turned 18")
+- **SCAN0188.webp** — Portrait of Raisa, age 18 (Sept 16, 1942, Ebrach)
+- **SCAN0189.webp** — Raisa with companion (Sept 1944, Ebrach)
+- **SCAN0190.webp** — Back of companion photo (inscription: "Ebrach IX 1944г.")
+
+All photos use transparent backgrounds (WebP with alpha) and `filter: drop-shadow()` instead of `box-shadow` to follow the irregular card edges. Referenced directly in layout templates and About page content (not via front matter `scans` array).
+
 ## Theme Layout
 
 All layouts in `themes/raisa/layouts/`:
@@ -116,9 +126,9 @@ Edit the corresponding layout file in `themes/raisa/layouts/` — these are hard
 ## Historical Context for AI Assistants
 
 When working with this content:
-- **Raisa** was ~18 when deported (born ~1924, Kyiv)
-- Letters span May 1942 (arrival in Germany) to late 1943
-- She worked on a farm in **Schönaich** (Franconia) then a factory in **Hannover**
+- **Raisa** was 17 when deported (born September 16, 1924, Kyiv — turned 18 in Germany)
+- Letters span May 1942 (arrival in Germany) to late 1943; photos extend to September 1944
+- She worked on a farm near **Ebrach** (Upper Franconia) then a factory in **Hannover**
 - Primary correspondents: sister **Anna**, grandmother **Бабушка**, children **Grishunok** and **Motik**
 - The Walter family hosted her: Ludwig, Hedwig, Eduard (soldier), Schön (fond of Raisa)
 - **Vladislav Kurbanbaiev** ("Kurban") — Serbian worker, her closest friend
