@@ -51,15 +51,35 @@ title: "О проекте"
 Известны только две фотографии Раисы военного времени.
 
 <div style="text-align: center; margin: 2rem 0;">
+<div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; height: 400px;">
+<div class="photo-flip-inner" style="height: 100%;">
+<div class="photo-flip-front">
 <img src="/scans/SCAN0188.webp" alt="Раиса Погорелова, 18 лет" style="max-height: 400px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+<div class="photo-flip-back">
+<img src="/scans/SCAN0187.webp" alt="Надпись на обороте" style="filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+</div>
+</div>
 <div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Раиса Погорелова, 18 лет. Сфотографирована в день рождения 16 сентября 1942 года в деревне Эбрах, Германия.</div>
+<div class="photo-flip-hint">нажмите, чтобы перевернуть</div>
 </div>
 
 На обороте её рукой: *«16/IX 1942. Deutschland dorf Ebrach. Фотографировалась в день рождения. Сегодня 16/IX-1942 года мне исполнилось 18 лет.»*
 
 <div style="text-align: center; margin: 2rem 0;">
+<div class="photo-flip" onclick="this.classList.toggle('flipped')" style="display: inline-block; height: 300px;">
+<div class="photo-flip-inner" style="height: 100%;">
+<div class="photo-flip-front">
 <img src="/scans/SCAN0189.webp" alt="Раиса с подругой, 1944" style="max-height: 300px; width: auto; max-width: 90%; filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+<div class="photo-flip-back">
+<img src="/scans/SCAN0190.webp" alt="Надпись на обороте" style="filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.25));">
+</div>
+</div>
+</div>
 <div style="font-size: 0.85rem; color: #8b7d6b; font-style: italic; margin-top: 0.5rem;">Раиса (слева) с подругой. Эбрах, сентябрь 1944 года.</div>
+<div class="photo-flip-hint">нажмите, чтобы перевернуть</div>
 </div>
 
 На обороте: *«Ebrach IX 1944г.»* — Эта фотография, сделанная в сентябре 1944 года, является самым поздним датированным документом в архиве, расширяя задокументированную хронологию на целый год после последнего сохранившегося письма.

@@ -16,12 +16,32 @@
 <div class="person-detail">
   <div style="display: flex; gap: 2rem; align-items: flex-end; flex-wrap: wrap; margin-bottom: 1.5rem;">
     <div style="text-align: center;">
-      <img src="{{ "scans/SCAN0188.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса Погорелова, 18 лет{{ else if eq $lang "de" }}Raisa Pogorelova, 18 Jahre{{ else }}Raisa Pogorelova, age 18{{ end }}" style="height: 320px; width: auto; max-width: 80vw; filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+      <div class="photo-flip" onclick="this.classList.toggle('flipped')" style="width: 200px; height: 320px;">
+        <div class="photo-flip-inner">
+          <div class="photo-flip-front">
+            <img src="{{ "scans/SCAN0188.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса Погорелова, 18 лет{{ else if eq $lang "de" }}Raisa Pogorelova, 18 Jahre{{ else }}Raisa Pogorelova, age 18{{ end }}" style="filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+          </div>
+          <div class="photo-flip-back">
+            <img src="{{ "scans/SCAN0187.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Надпись на обороте{{ else if eq $lang "de" }}Rückseite{{ else }}Back inscription{{ end }}" style="filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+          </div>
+        </div>
+      </div>
       <div style="font-size: 0.75rem; color: var(--text-muted, #8b7d6b); margin-top: 0.4rem; font-style: italic;">{{ if eq $lang "ru" }}16 сентября 1942, Эбрах{{ else if eq $lang "de" }}16. September 1942, Ebrach{{ else }}September 16, 1942, Ebrach{{ end }}</div>
+      <div class="photo-flip-hint">{{ if eq $lang "ru" }}нажмите, чтобы перевернуть{{ else if eq $lang "de" }}klicken zum Umdrehen{{ else }}click to turn over{{ end }}</div>
     </div>
     <div style="text-align: center;">
-      <img src="{{ "scans/SCAN0189.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса с подругой, 1944{{ else if eq $lang "de" }}Raisa mit Freundin, 1944{{ else }}Raisa with companion, 1944{{ end }}" style="height: 220px; width: auto; max-width: 80vw; filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+      <div class="photo-flip" onclick="this.classList.toggle('flipped')" style="width: 330px; height: 220px;">
+        <div class="photo-flip-inner">
+          <div class="photo-flip-front">
+            <img src="{{ "scans/SCAN0189.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса с подругой, 1944{{ else if eq $lang "de" }}Raisa mit Freundin, 1944{{ else }}Raisa with companion, 1944{{ end }}" style="filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+          </div>
+          <div class="photo-flip-back">
+            <img src="{{ "scans/SCAN0190.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Надпись на обороте{{ else if eq $lang "de" }}Rückseite{{ else }}Back inscription{{ end }}" style="filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+          </div>
+        </div>
+      </div>
       <div style="font-size: 0.75rem; color: var(--text-muted, #8b7d6b); margin-top: 0.4rem; font-style: italic;">{{ if eq $lang "ru" }}Эбрах, сентябрь 1944{{ else if eq $lang "de" }}Ebrach, September 1944{{ else }}Ebrach, September 1944{{ end }}</div>
+      <div class="photo-flip-hint">{{ if eq $lang "ru" }}нажмите, чтобы перевернуть{{ else if eq $lang "de" }}klicken zum Umdrehen{{ else }}click to turn over{{ end }}</div>
     </div>
   </div>
   <p><strong>Раїса Григорівна Погорелова</strong> · {{ if eq $lang "ru" }}Род. 16 сентября 1924, Киев · Подписывала письма как{{ else if eq $lang "de" }}Geb. 16. September 1924, Kyjiw · Unterschrieb ihre Briefe als{{ else }}Born September 16, 1924, Kyiv · Signed her letters as{{ end }} Рая, Райха, Раеса, Раюха, Раїса</p>
