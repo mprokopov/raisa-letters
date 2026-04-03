@@ -14,7 +14,17 @@
 
 <h2>{{ if eq $lang "ru" }}Раиса Погорелова{{ else if eq $lang "de" }}Raisa Pogorelova{{ else }}Raisa Pogorelova{{ end }}</h2>
 <div class="person-detail">
-  <p><strong>Раїса Григорівна Погорелова</strong> · {{ if eq $lang "ru" }}Род. ~1924, Киев · Подписывала письма как{{ else if eq $lang "de" }}Geb. ~1924, Kyjiw · Unterschrieb ihre Briefe als{{ else }}Born ~1924, Kyiv · Signed her letters as{{ end }} Рая, Райха, Раеса, Раюха, Раїса</p>
+  <div style="display: flex; gap: 2rem; align-items: flex-end; flex-wrap: wrap; margin-bottom: 1.5rem;">
+    <div style="text-align: center;">
+      <img src="{{ "scans/SCAN0188.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса Погорелова, 18 лет{{ else if eq $lang "de" }}Raisa Pogorelova, 18 Jahre{{ else }}Raisa Pogorelova, age 18{{ end }}" style="height: 320px; width: auto; max-width: 80vw; filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+      <div style="font-size: 0.75rem; color: var(--text-muted, #8b7d6b); margin-top: 0.4rem; font-style: italic;">{{ if eq $lang "ru" }}16 сентября 1942, Эбрах{{ else if eq $lang "de" }}16. September 1942, Ebrach{{ else }}September 16, 1942, Ebrach{{ end }}</div>
+    </div>
+    <div style="text-align: center;">
+      <img src="{{ "scans/SCAN0189.webp" | relURL }}" alt="{{ if eq $lang "ru" }}Раиса с подругой, 1944{{ else if eq $lang "de" }}Raisa mit Freundin, 1944{{ else }}Raisa with companion, 1944{{ end }}" style="height: 220px; width: auto; max-width: 80vw; filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));">
+      <div style="font-size: 0.75rem; color: var(--text-muted, #8b7d6b); margin-top: 0.4rem; font-style: italic;">{{ if eq $lang "ru" }}Эбрах, сентябрь 1944{{ else if eq $lang "de" }}Ebrach, September 1944{{ else }}Ebrach, September 1944{{ end }}</div>
+    </div>
+  </div>
+  <p><strong>Раїса Григорівна Погорелова</strong> · {{ if eq $lang "ru" }}Род. 16 сентября 1924, Киев · Подписывала письма как{{ else if eq $lang "de" }}Geb. 16. September 1924, Kyjiw · Unterschrieb ihre Briefe als{{ else }}Born September 16, 1924, Kyiv · Signed her letters as{{ end }} Рая, Райха, Раеса, Раюха, Раїса</p>
   {{ if eq $lang "ru" }}
   <p>Восемнадцать лет, когда была угнана в Германию. Швея, автор дневника, полиглот. Свободно говорила по-немецки — «принимают меня за немку». Вела дневник под названием <em>Дневник Deutschland</em>. Отправляла посылки домой, зарабатывая 17 марок в месяц. Писала с литературным талантом и острым умом.</p>
   {{ else if eq $lang "de" }}
